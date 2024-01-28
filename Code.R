@@ -5,7 +5,7 @@ data <- read.csv("UsedCars.csv", sep = ",", header = TRUE)
 model_1 <- lm(Price ~ KM, data = data)
 
 # Create and save scatter plot of Price vs KM
-png("scatter_plot_price_vs_km.png", width = 800, height = 600)
+png("figures/scatter_plot_price_vs_km.png", width = 800, height = 600)
 plot(data$KM, data$Price, xlab = "Accumulated Kilometers on Odometer", ylab = "Price (Euros)", pty = 2, lwd = 2)
 dev.off()
 
@@ -20,7 +20,7 @@ print(summary(model_1))
 confint(model_1, level = 0.95)
 
 # Create and save the residual plot
-png("residual_plot.png", width = 800, height = 600)
+png("figures/residual_plot.png", width = 800, height = 600)
 plot(model_1$fitted.values, model_1$residuals, xlab="Fitted Values", ylab="Residuals", main="Residual Plot", pch = 20)
 abline(h = 0, col = "red")
 dev.off()
@@ -29,13 +29,13 @@ dev.off()
 library(car)
 
 # Create and save the Q-Q plot
-png("qq_plot.png", width = 800, height = 600)
+png("figures/qq_plot.png", width = 800, height = 600)
 qqnorm(model_1$residuals, main = "Q-Q Plot")
 qqline(model_1$residuals, col = "red")
 dev.off()
 
 # Create and save the histogram of residuals
-png("histogram_of_residuals.png", width = 800, height = 600)
+png("figures/histogram_of_residuals.png", width = 800, height = 600)
 hist(model_1$residuals, main = "Histogram of Residuals", xlab = "Residuals")
 dev.off()
 
