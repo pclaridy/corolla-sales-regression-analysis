@@ -16,10 +16,6 @@ This project conducts a detailed linear regression analysis on a dataset from a 
 - [ANOVA for Model Selection](#anova-for-model-selection)
 - [Conclusion](#conclusion)
 
-## Project Overview
-
-The project conducts a detailed linear regression analysis on used Toyota Corolla car sales data from a European car dealer. It aims to provide valuable insights into the factors that influence the sales prices of these cars.
-
 ## Data Description
 
 The dataset, `UsedCars.csv`, consists of various attributes of used Toyota Corolla cars, including:
