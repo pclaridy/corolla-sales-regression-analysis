@@ -133,7 +133,6 @@ These additional metrics provide context for real-world interpretability of pred
 
 - **Language**: R  
 - **Libraries**: `ggplot2`, `dplyr`, `car`, `MASS`, `lmtest`  
-- **Data**: [`UsedCars.csv`](https://github.com/pclaridy/corolla-sales-regression-analysis/blob/main/UsedCars.csv)
 
 ---
 
